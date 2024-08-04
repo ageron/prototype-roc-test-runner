@@ -1,6 +1,6 @@
-# Exercism C Test Runner
+# Exercism Roc Test Runner
 
-The Docker image to automatically run tests on C solutions submitted to [Exercism].
+The Docker image to automatically run tests on Roc solutions submitted to [Exercism].
 
 ## Run the test runner
 
@@ -50,11 +50,14 @@ When you've made modifications to the code that will result in a new "golden" st
 
 The regular expression that looks for calls to `RUN_TEST` cannot handle multiline comments or more than one function call per line. The calls need to be kept simple:
 
-```c
+```Roc
 RUN_TEST(test_date);
 RUN_TEST(test_date_and_time_with_day_rollover);
 // RUN_TEST(test_your_birthday);
 ```
+
+# Acknowledgement
+This repository was mostly forked from https://github.com/exercism/c-test-runner.
 
 [test-runners]: https://github.com/exercism/docs/tree/main/building/tooling/test-runners
 [golden]: https://ro-che.info/articles/2017-12-04-golden-tests
